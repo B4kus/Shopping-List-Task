@@ -95,9 +95,8 @@
 		D707136B23D9FEB1005832C0 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				D70713A023D9FFE1005832C0 /* AppDelegate */,
 				D707138F23D9FF85005832C0 /* Utilities */,
-				D707136C23D9FEB1005832C0 /* AppDelegate.swift */,
-				D707136E23D9FEB1005832C0 /* SceneDelegate.swift */,
 				D707137023D9FEB1005832C0 /* ViewController.swift */,
 				D707137223D9FEB1005832C0 /* Main.storyboard */,
 				D707137523D9FEB4005832C0 /* Assets.xcassets */,
@@ -129,6 +128,15 @@
 				D707139323D9FFB3005832C0 /* ViewController+Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D70713A023D9FFE1005832C0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D707136C23D9FEB1005832C0 /* AppDelegate.swift */,
+				D707136E23D9FEB1005832C0 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
