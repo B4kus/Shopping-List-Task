@@ -62,4 +62,12 @@ final class ProductTableViewCellViewModelTest: XCTestCase {
         XCTAssertEqual(currency, systemUnderTests.currency)
     }
     
+    func testViewProductImage() {
+        // Given
+        let image: UIImage = #imageLiteral(resourceName: "food-and-restaurant")
+        
+        // Then
+        XCTAssertEqual(image, systemUnderTests.productImage)
+    }
+    
 }
