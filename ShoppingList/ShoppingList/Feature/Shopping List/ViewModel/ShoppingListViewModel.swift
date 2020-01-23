@@ -20,8 +20,6 @@ final class ShoppingListViewModel {
     var productCellViewModels: [ProductTableViewCellViewModel] = []
     private var sumUpViewModel: SumUpViewModel? { didSet { checkOut() } }
     private var exchangeRateModel: ExchnageRateViewTableViewCellViewModel? { didSet { checkOut() } }
-    
-    
     private var timer: Timer?
     
     // MARK: - Dependencies

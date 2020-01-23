@@ -8,16 +8,6 @@
 
 import Foundation
 
-struct SumupModel {
-    let sumupValue: Double
-    let currency: String
-    
-    init(sumupValue: Double, currency: String) {
-        self.sumupValue = sumupValue
-        self.currency = currency
-    }
-}
-
 final class SumUpViewModel {
 
     // MARK: - Properties
@@ -39,6 +29,13 @@ final class SumUpViewModel {
     }
 }
 
-
-
+struct SumupModel {
+    let sumupValue: Double
+    let currency: String
+    
+    init(sumupValue: Double, currency: String) {
+        self.sumupValue = sumupValue
+        self.currency = currency
+    }
+}
 

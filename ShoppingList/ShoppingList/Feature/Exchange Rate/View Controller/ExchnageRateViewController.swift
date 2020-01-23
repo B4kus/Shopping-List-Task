@@ -9,9 +9,9 @@
 import UIKit
 
 final class ExchnageRateViewController: UIViewController, ViewConfigurable {
-
+    
     // MARK: - Views
-       
+    
     typealias ContentViewType = ExchnageRateView
     
     // MARK: - Properties

@@ -14,11 +14,12 @@ protocol ExchangeRateWebServiceProvider {
 }
 
 struct ExchangeRateWebService: ExchangeRateWebServiceProvider {
-
+    
     static func getExchnageRateList() -> GetEndpoint<RatesModel> {
-           let prarameters: [String: Any] = ["pairs":"USDBAM,USDEUR,USDCOP,USDBOB,USDBRL,USDCYP,USDUSD"]
-           return GetEndpoint(parameters: prarameters)
+        let prarameters: [String: Any] = ["pairs":"USDBAM,USDEUR,USDCOP,USDBOB,USDBRL,USDCYP,USDUSD"]
+        return GetEndpoint(parameters: prarameters)
     }
+    
     static func getExchnageRate(exchange pair: String) -> GetEndpoint<RatesModel> {
         let prarameters: [String: Any] = ["pairs": pair]
         return GetEndpoint(parameters: prarameters)

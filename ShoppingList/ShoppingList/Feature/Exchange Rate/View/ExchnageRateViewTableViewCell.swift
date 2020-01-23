@@ -18,8 +18,6 @@ final class ExchnageRateViewTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     private var viewModel: ExchnageRateViewTableViewCellViewModel?
-    static var cellHeight: CGFloat = 60.0
-    
     
     // MARK: - Initalization
     

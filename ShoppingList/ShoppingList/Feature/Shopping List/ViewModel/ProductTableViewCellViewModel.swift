@@ -51,8 +51,6 @@ final class ProductTableViewCellViewModel {
      
     var amountChanged: (() -> Void)?
     
-    // MARK: - Output
-    
     // MARK: - Initalization
     
     init(productModel: Product) {

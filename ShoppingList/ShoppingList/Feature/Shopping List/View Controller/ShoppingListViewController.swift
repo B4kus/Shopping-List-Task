@@ -44,6 +44,8 @@ final class ShoppingListViewController: UIViewController, ViewConfigurable {
         loadContentView()
     }
     
+    // MARK: - Setup
+    
     private func setupTableView() {
         contentView.shoopingListTableView.dataSource = self
     }

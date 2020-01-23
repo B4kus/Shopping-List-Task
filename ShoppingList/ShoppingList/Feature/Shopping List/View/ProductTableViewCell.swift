@@ -20,7 +20,6 @@ final class ProductTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
-    static var cellHeight: CGFloat = 100.0
     private var viewModel: ProductTableViewCellViewModel?
     
     var stepperValueChanged: ((_ value: Double) -> ())?
@@ -30,7 +29,7 @@ final class ProductTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupLayout()
-        stepperView.addTarget(self, action: #selector(stepperValueChange), for: .valueChanged)
+        setupStepper()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,6 +37,10 @@ final class ProductTableViewCell: UITableViewCell {
     }
     
     // MARK: - Setup
+    
+    private func setupStepper() {
+        stepperView.addTarget(self, action: #selector(stepperValueChange), for: .valueChanged)
+    }
     
     private func setupLayout() {
         contentView.addSubview(productImage)
@@ -101,7 +104,7 @@ final class ProductTableViewCell: UITableViewCell {
 }
 
 private enum Subviews {
-
+    
     static var productImage: UIImageView {
         let imageView = UIImageView()
         return imageView

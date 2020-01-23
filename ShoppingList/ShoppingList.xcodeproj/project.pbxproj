@@ -43,6 +43,7 @@
 		D70713E023DA015B005832C0 /* SumUpViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70713D923DA015A005832C0 /* SumUpViewModelTest.swift */; };
 		D70713E123DA015B005832C0 /* ExchangeRateViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70713DA23DA015B005832C0 /* ExchangeRateViewModelTest.swift */; };
 		D70713E723DA03E3005832C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70713E623DA03E3005832C0 /* Default-568h@2x.png */; };
+		D70713E923DA05A9005832C0 /* RatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70713E823DA05A9005832C0 /* RatesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		D70713D923DA015A005832C0 /* SumUpViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumUpViewModelTest.swift; sourceTree = "<group>"; };
 		D70713DA23DA015B005832C0 /* ExchangeRateViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewModelTest.swift; sourceTree = "<group>"; };
 		D70713E623DA03E3005832C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D70713E823DA05A9005832C0 /* RatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,10 +236,10 @@
 		D70713BC23DA0109005832C0 /* Shopping List */ = {
 			isa = PBXGroup;
 			children = (
+				D70713A223DA0094005832C0 /* View Controller */,
 				D70713B523DA0100005832C0 /* ViewModel */,
 				D70713A923DA00E8005832C0 /* View */,
 				D70713A523DA00DC005832C0 /* Model */,
-				D70713A223DA0094005832C0 /* View Controller */,
 			);
 			path = "Shopping List";
 			sourceTree = "<group>";
@@ -245,12 +247,12 @@
 		D70713BD23DA0127005832C0 /* Exchange Rate */ = {
 			isa = PBXGroup;
 			children = (
-				D70713C323DA0127005832C0 /* Manager */,
 				D70713C123DA0127005832C0 /* WebService */,
+				D70713C323DA0127005832C0 /* Manager */,
 				D70713CA23DA0127005832C0 /* View Controller */,
 				D70713BE23DA0127005832C0 /* ViewModel */,
-				D70713C523DA0127005832C0 /* Model */,
 				D70713C723DA0127005832C0 /* View */,
+				D70713C523DA0127005832C0 /* Model */,
 			);
 			path = "Exchange Rate";
 			sourceTree = "<group>";
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				D70713C623DA0127005832C0 /* ExchangeRateModel.swift */,
+				D70713E823DA05A9005832C0 /* RatesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				D70713D123DA0127005832C0 /* ExchnageRateViewTableViewCell.swift in Sources */,
 				D707136D23D9FEB1005832C0 /* AppDelegate.swift in Sources */,
 				D70713B023DA00E9005832C0 /* ShoppingListView.swift in Sources */,
+				D70713E923DA05A9005832C0 /* RatesModel.swift in Sources */,
 				D70713CC23DA0127005832C0 /* ExchangeRateViewModel.swift in Sources */,
 				D70713CD23DA0127005832C0 /* ExchnageRateViewTableViewCellViewModel.swift in Sources */,
 				D707139923D9FFB3005832C0 /* ViewConfigurable.swift in Sources */,
