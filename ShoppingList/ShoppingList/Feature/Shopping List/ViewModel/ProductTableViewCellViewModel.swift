@@ -8,7 +8,21 @@
 
 import UIKit
 
-final class ProductTableViewCellViewModel {
+protocol ProductTableViewCellViewModelProtocol {
+    var productName: String { get }
+    var cost: Double { get }
+    var formattedPrice: String { get }
+    var amount: String { get }
+    var currency: ExchangeRateModel { get }
+    var productImage: UIImage { get }
+    
+    func updateAmount(amount: Double)
+    func initilizeAmoutChanged(amountChanged: (() -> Void)?)
+    var amountChanged: (() -> Void)? { get set }
+}
+
+
+final class ProductTableViewCellViewModel: ProductTableViewCellViewModelProtocol {
     
     // MARK: - Properties
     
@@ -44,11 +58,11 @@ final class ProductTableViewCellViewModel {
         productModel.amount = amount
         amountChanged?()
     }
-     
+    
     func initilizeAmoutChanged(amountChanged: (() -> Void)?) {
         self.amountChanged = amountChanged
     }
-     
+    
     var amountChanged: (() -> Void)?
     
     // MARK: - Initalization

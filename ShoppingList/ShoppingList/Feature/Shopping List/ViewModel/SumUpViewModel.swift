@@ -8,7 +8,12 @@
 
 import Foundation
 
-final class SumUpViewModel {
+protocol SumUpViewModelProtocol {
+    var currency: String { get }
+    var sumupValue: Double { get }
+}
+
+final class SumUpViewModel: SumUpViewModelProtocol {
 
     // MARK: - Properties
     

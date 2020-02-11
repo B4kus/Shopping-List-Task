@@ -8,7 +8,14 @@
 
 import Foundation
 
-final class ExchnageRateViewTableViewCellViewModel {
+protocol ExchnageRateViewTableViewCellViewModelProtocol {
+    var currency: String { get }
+    var formattedCurrency: String { get }
+    var formattedExchangeRate: String { get }
+    var exchangeRate: Double { get }
+}
+
+final class ExchnageRateViewTableViewCellViewModel: ExchnageRateViewTableViewCellViewModelProtocol {
     
     // MARK: - Properties
     

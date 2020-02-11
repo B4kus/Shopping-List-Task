@@ -8,7 +8,11 @@
 
 import Foundation
 
-final class ExchangeRateViewModel {
+protocol ExchangeRateViewModelProtocol {
+    func loadData(completion: @escaping (HTTPClientError?) -> Void)
+}
+
+final class ExchangeRateViewModel: ExchangeRateViewModelProtocol {
     
     // MARK: Properties
     
@@ -33,7 +37,7 @@ final class ExchangeRateViewModel {
             guard let self = self else { return }
             switch result {
             case .success(let model):
-                let viewModels = model.rates.map { ExchnageRateViewTableViewCellViewModel (exchangeRateModel: $0)}
+                let viewModels = model.rates.map { ExchnageRateViewTableViewCellViewModel(exchangeRateModel: $0) }
                 self.exchnageRateViewTableViewCellViewModel = viewModels
                 completion(nil)
             case .failure(let error):
